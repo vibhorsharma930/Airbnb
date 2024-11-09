@@ -1,0 +1,6 @@
+type,availability,price,property_id,date
+Single,10,100.0,1,2024-10-10
+Double,5,150.0,1,2024-10-11
+Suite,3,300.0,2,2024-10-10
+Single,8,90.0,2,2024-10-12
+Double,2,140.0,1,2024-10-13
