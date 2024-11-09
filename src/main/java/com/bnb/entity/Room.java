@@ -3,6 +3,7 @@ package com.bnb.entity;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.batch.item.ItemProcessor;
 
 import java.time.LocalDate;
 
@@ -11,13 +12,16 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "room")
 public class Room {
+
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id", nullable = false)
+
     private Long id;
 
-    @Column(name = "type_of_room", nullable = false)
-    private String type_of_room;
+    @Column(name = "type", nullable = false)
+    private String type;
 
     @Column(name = "availability", nullable = false)
     private Integer availability;
@@ -31,5 +35,6 @@ public class Room {
 
     @Column(name = "date")
     private LocalDate date;
+
 
 }

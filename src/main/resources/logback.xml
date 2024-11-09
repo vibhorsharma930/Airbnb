@@ -13,11 +13,12 @@
         <file>C:/logs/bnb.log</file>  <!-- Ensure this matches your file name -->
 
         <encoder>
-            <pattern>%d{ HH:mm:ss} %-5level %logger{36} - %msg%n</pattern>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level [%thread] %logger{36} - %msg%n
+            </pattern>
         </encoder>
     </appender>
 
-    <root level="error"> <!-- or info, or trace, depending on what you need -->
+    <root level="INFO"> <!-- or info, or trace, depending on what you need -->
         <appender-ref ref="FILE"/>
     <appender-ref ref="ConsoleLogger"/>
     </root>

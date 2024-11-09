@@ -28,7 +28,7 @@ public class ImageService {
     public Image savedImage(MultipartFile multipartFile
     ,long property_id,
      String bucketName
-    )                     throws Exception
+    )   throws Exception
     {
 
         Image image =new Image();

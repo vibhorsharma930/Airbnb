@@ -23,10 +23,10 @@ public class Booking {
     @Column(name = "no_of_guest", nullable = false)
     private Integer no_of_guest;
 
-    @Column(name = "mobile", unique = true)
+    @Column(name = "mobile")
     private String mobile;
 
-    @Column(name = "email", unique = true)
+    @Column(name = "email")
     private String email;
 
     @Column(name = "total_night", nullable = false)
@@ -45,5 +45,8 @@ public class Booking {
     @ManyToOne
     @JoinColumn(name = "property_id")
     private Property property;
+
+    @Column(name = "room_type", nullable = false)
+    private String roomType;
 
 }
